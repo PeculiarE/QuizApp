@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Quiz App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="first-page m-auto">
+        <h1>JavaScript Quiz</h1>
+        <h5>Goodluck!</h5>
+        <button>Click here to start the quiz ></button>
+    </div>
+    <div class="container my-5 mx-auto">
+        <form action="" class="form">
+            <h1>Quiz Time</h1>
+            <p>Which of these is not a JavaScript framework?</p>
+            <input type="radio" id="react" name="framework" value="react">
+            <label for="react">React</label><br>
+            <input type="radio" id="vue" name="framework" value="vue">
+            <label for="vue">Vue</label><br>
+            <input type="radio" id="css" class="correct" name="framework" value="css">
+            <label for="css">CSS</label><br>
+
+            <br>
+
+            <p>What is the standard markup language for creating web pages?</p>
+            <input type="radio" id="html" class="correct" name="markup" value="html">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="boot-strap" name="markup" value="boot-strap">
+            <label for="boot-strap">Bootstrap</label><br>
+            <input type="radio" id="java" name="markup" value="java">
+            <label for="java">Java</label><br>
+
+            <br>
+
+            <p>Which of these is a JavaScript event?</p>
+            <input type="radio" id="on-click" name="event-time" value="on-click">
+            <label for="on-click">Onclick</label><br>
+            <input type="radio" id="on-key-down" name="event-time" value="on-key-down">
+            <label for="on-key-down">Onkeydown</label><br>
+            <input type="radio" id="all-above" class="correct" name="event-time" value="all-above">
+            <label for="all-above">All of the above</label><br>
+            
+            <br>
+
+            <p>Inside which HTML element do we put the JavaScript?</p>
+            <input type="radio" id="script" class="correct" name="location" value="script">
+            <label for="script">script</label><br>
+            <input type="radio" id="js" name="location" value="js">
+            <label for="js">js</label><br>
+            <input type="radio" id="scripting" name="location" value="scripting">
+            <label for="scripting">scripting</label><br>
+            
+            <br>
+
+            <p>Where is the correct place to insert a JavaScript?</p>
+            <input type="radio" id="body" name="insert" value="body">
+            <label for="body">The body section</label><br>
+            <input type="radio" id="head" name="insert" value="head">
+            <label for="head">The head section</label><br>
+            <input type="radio" id="both" class="correct" name="insert" value="both">
+            <label for="both">Both the body and head sections are correct</label><br>
+            
+            <br>
+
+            <p>The external JavaScript file must contain the script tag.</p>
+            <input type="radio" id="true" name="external" value="true">
+            <label for="true">True</label><br>
+            <input type="radio" id="false" class="correct" name="external" value="false">
+            <label for="false">False</label><br>
+            
+            <br>
+
+            <p>How do you find the number with the highest value of x and y</p>
+            <input type="radio" id="top" name="highest-value" value="top">
+            <label for="top">top(x,y)</label><br>
+            <input type="radio" id="max" class="correct" name="highest-value" value="max">
+            <label for="max">Math.max(x,y)</label><br>
+            <input type="radio" id="ceil" name="highest-value" value="ceil">
+            <label for="ceil">Math.ceil(x,y)</label><br>
+
+            <br>
+
+            <p>JavaScript is the same as Java.</p>
+            <input type="radio" id="trueb" name="javaj" value="trueb">
+            <label for="trueb">True</label><br>
+            <input type="radio" id="falseb" class="correct" name="javaj" value="false">
+            <label for="falseb">False</label><br>
+
+            <br>
+
+            <p>Which operator is used to assign a value to a variable?</p>
+            <input type="radio" id="minus" name="assign-value" value="minus">
+            <label for="minus">-</label><br>
+            <input type="radio" id="star" name="assign-value" value="star">
+            <label for="star">*</label><br>
+            <input type="radio" id="equals-to" class="correct" name="assign-value" value="equals-to">
+            <label for="equals-to">=</label><br>
+
+            <br>
+
+            <p>What will the following code return: Boolean(10 > 9)</p>
+            <input type="radio" id="truec" class="correct" name="boolean" value="truec">
+            <label for="truec">True</label><br>
+            <input type="radio" id="nan" name="boolean" value="nan">
+            <label for="nan">NaN</label><br>
+            <input type="radio" id="falsec" name="boolean" value="falsec">
+            <label for="falsec">False</label>
+
+            <br><br>
+            
+            <button id="submit-btn">Submit</button>
+        </form>
+
+        <div class="results">
+            <p id="result-statement"></p>
+            <button id="redo-btn">I want a do-over</button>
+            <div id="animation">
+                <div style="color: hotpink; font-style: 100px;">
+                    Yay! Give yourself a treat!
+                </div>
+                <div id="bal" style="position:absolute;">
+                    <img src="./pink-air-balloons-on-white.jpg" alt="balloons">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./jquery-3.5.1.js"></script>
+    <script src="./assfinaljs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
